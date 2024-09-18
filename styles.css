@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-principal: #0783a1af;
+    --cor-secundaria: #3c3c41;
+    --cor-terciaria: #ffffff;
+    --cor-hover:#083a4954;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-principal)
+    /* border: 5px solid black; */
+}
+
+/* cabecalho */
+#containerMenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+/* cabecalhomenu */
+#menuLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.menuLink{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* .menuLink{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    border-radius: 99em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform-origin: center left;
+    transition: width 0.2s ease-in;
+    text-decoration: none;
+    color: inherit;
+} */
+
+#containerMobileMenu{
+    padding: 0%;
+}
+
+.menuMobileIcon{
+    display: none;
+}
+
+.mobileButton{
+border: none;
+background-color: var(--cor-principal);
+
+}
+
+.icons  {
+    width: 100%;
+}
+
+ul li{
+    position:relative;
+    display:inline-flex;
+    margin:2rem 1rem;
+    width:100px;
+    height:100px;
+    border-radius:5px;
+    background-color:#ffffff00;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.01);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  ul li:after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:#00ccff3f;
+    opacity:0;
+    border-radius:5px;
+    box-shadow:0 5px 15px 0 rgba(0,0,0,0.03);
+    transition: all 0.6s cubic-bezier(0.0, 0.8, 0.4, 0.01);
+    z-index: -1;
+  }
+  
+  ul li:hover{
+    transform:scale(1.25,1.25);
+  }
+  
+  ul li:hover::after{
+    opacity:1;
+  }
+
+/* .iconsHab{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    padding: 5%;
+} */
+
+.mobileMenu{
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+#rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-principal);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    gap: 0.2rem;
+}
+
+.logoRodape{
+    width: 5%;
+}
+
+#containerTop{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    gap: 5.12rem;
+    background-color: var(--cor-principal)
+}
+
+#textosPrincipais{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacaoConteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 34rem;
+    padding: 0.3rem;
+}
+
+#apresentacaoTexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 31.25rem;
+    padding: 0.3rem;
+}
+
+.textoH1{
+    /* border: 1px solid red; */
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+    color: var(--cor-secundaria);
+}
+
+.texto-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacaoGabriel{
+    /* border: 1px solid red; */
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    margin: 0.3rem;
+}
+
+
+#contato{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contato >h2{
+    color: var(--cor-secundaria);
+    font-family: 'Krona One', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.link>img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.link{
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 15px 0px 15px 0px;
+    text-decoration:none ;
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.link:hover{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-hover);
+
+}
+
+.projetosPag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projetos1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.projetos2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+
+.projeto{
+    font-size: 1rem;
+    font-family: 'Krona One', sans-serif;
+    color: var(--cor-secundaria);
+}
+
+
+#imgPerfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 350px; */
+    /* height: 350px; */
+    /* border-radius: 100%; */
+    /* overflow: hidden; */
+}
+
+#imgPerfilHab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.include4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10% 50% 10% 50%/50% 10% 50% 10%;
+    filter:drop-shadow(10px 10px 20px rgb(221, 224, 4));
+    /* background-image: url(../aula_1/assets/Rectangle\ 60.png); */
+}
+
+/* .rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 35%;
+} */
+
+.apresentacaoImg{
+    width: 35%;
+    height: 5%;
+    transition: all 0.3s ease-in-out;
+    border-radius: 100%;
+}
+
+ .apresentacaoImg:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--cor-principal);
+  }   */
+
+ #imgPerfil > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    border: 1px solid red;
+    transition: all 0.3s ease-in-out;
+}
+
+ul{
+    color: var(--cor-secundaria);
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:730px) {
+    #containerMenu{
+        padding: 1.5rem 4rem;
+    }
+    
+    #menuLinks{
+        display: none;
+    }
+
+    .menuMobileIcon{
+        display: block;
+    }
+
+   .menuMobileIcon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobileMenu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobileMenu .mobileItem{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+@media(max-width:1200px){
+    #containerMenu{
+        padding: 6%;
+    }
+
+    #menuLinks{
+        justify-content: center;
+    }
+
+    #containerTop{
+        flex-direction: column-reverse;
+        gap: 0.3rem;
+    }
+    
+    .textoH1{
+        width: auto;
+    }
+
+    .apresentacaoGabriel{
+        width: auto;
+    }
+
+    #contato{
+        width: auto;
+    }
+
+    .link{
+        width: auto;
+    }
+
+    .apresentacaoConteudo{
+        width: auto;
+    }
+
+    #apresentacaoTexto{
+        padding:3%;
+    }
+
+    .include4{
+        width: 20%;
+        height: 20%;
+
+    }
+
+    .rectangle{
+        width: 20%;
+        height: 20%;
+    }
+
+    .projetos{
+        width: 40%;
+        height: 40%;
+    }
+
+}

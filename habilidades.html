@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- div # (para id) . (para classe) (nome para classe ou id) -->
+    <!-- div#nomeDaId ou .nomeDaClasse (depois tab) -->
+    <!-- ul>li*6>a -->
+<div id="wrapper">
+    <div id="containerMenu">
+        <nav>
+            <div id="menuLinks">
+                <a class="menuLink" href="index.html">Home</a>
+                <a class="menuLink" href="sobremim.html">Sobre Mim</a>
+                <a class="menuLink" href="habilidades.html">Habilidades</a>
+                <a class="menuLink" href="projetos.html">Projetos</a>
+            </div>
+            <div class="menuMobileIcon">
+                <button onclick="menuShow()"><img class="iconMobile" src="/img/menuMobile.png" alt="manuMobile"></button>
+            </div>
+        </nav>
+        <div class="mobileMenu">
+            <ul>
+                <li class="mobileItem"><a class="menuLink" href="index.html">Home</a></li>
+                <li class="mobileItem"><a class="menuLink" href="sobremim.html">Sobre Mim</a></li>
+                <li class="mobileItem"><a class="menuLink" href="habilidades.html">Habilidades</a></li>
+                <li class="mobileItem"><a class="menuLink" href="projetos.html">Projetos</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="containerTop">
+        <div id="textosPrincipais">
+            <section class="apresentacaoConteudo">
+                <h1 class="textoH1">
+                    Habilidades
+                </h1>
+                <p class="apresentacaoGabriel">
+                    <!-- <div class="iconsHab">
+                        <img class="iconsHab" src="img/html.svg" alt="html">
+                        <img class="iconsHab" src="img/css.svg" alt="css">
+                        <img class="iconsHab" src="img/js.svg" alt="js">
+                        <img class="iconsHab" src="img/node.svg" alt="node.js">
+                        <img class="iconsHab" src="img/mysql.svg" alt="mysql">
+                        <img class="iconsHab" src="img/git.svg" alt="git">
+                        <img class="iconsHab" src="img/github.svg" alt="github">
+                    </div> -->
+                    <ul>
+                        <li><img class="icons" src="img/html2.svg" alt=""></li>
+                        <li><img class="icons" src="img/css.svg" alt=""></li>
+                        <li><img class="icons" src="img/js.svg" alt=""></li>
+                        <li><img class="icons" src="img/node.svg" alt=""></li>
+                        <li><img class="icons" src="img/mysql.svg" alt=""></li>
+                        <li><img class="icons" src="img/git.svg" alt=""></li>
+                        <li><img class="icons" src="img/github.svg" alt=""></li>
+                        <li><img class="icons" src="img/py.svg" alt=""></li>
+                    </ul>
+                </p>
+                <div id="contato">
+                    <a class="link" href="https://drive.google.com/drive/folders/1gxil6j2TwwXRKS6wr91YphuYb0v6tZHq?usp=sharing">
+                        <img src="/img/cert.png" alt="certificado">Certificados
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div id="imgPerfil">
+            <img class="include4" src="/img/perfil_1.webp" alt="Foto Do Gabriel">
+            <img class="rectangle" src="/img/Rectangle 61.png" alt="Foto Do Gabriel">
+        </div>
+    </div>
+    <div id="rodape">
+        <img class="logoRodape" src="/img/Logo Alura Include.png" alt="logoAlura">
+        <footer class="rodapeTexto">Desenvolvido por Gabriel Moraes Coelho</footer>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- html: Gera a estrutura básica de um documento HTML.
+ul>li*5: Cria uma lista não ordenada com cinco itens de lista.
+div>h1+p: Cria uma div contendo um cabeçalho (h1) seguido de um parágrafo (p).
+input[type=text]+input[type=password]: Cria dois campos de entrada, um para texto e outro para senha. -->
